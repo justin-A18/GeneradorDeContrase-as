@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <link rel="shortcut icon" href="./assets/padlock.png" type="image/x-icon">
+    
+    <title>Generador contraseña</title>
+
+</head>
+<body id="body-oscuro">
+
+    <Header class="container-navegation">
+
+        <nav class="navegation__content">
+
+            <ul class="navegation__links">
+
+                <li class="links__content">
+                    <a href="#" class="link one">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="svg-white1">
+                            <path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path>
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="links__content">
+                    <a href="#" class="link two">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="svg-white2">
+                            <path d="M12 22a2.98 2.98 0 0 0 2.818-2H9.182A2.98 2.98 0 0 0 12 22zm7-7.414V10c0-3.217-2.185-5.927-5.145-6.742C13.562 2.52 12.846 2 12 2s-1.562.52-1.855 1.258C7.185 4.074 5 6.783 5 10v4.586l-1.707 1.707A.996.996 0 0 0 3 17v1a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-1a.996.996 0 0 0-.293-.707L19 14.586z"></path>
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="links__content tree">
+                    <button class="link tree-btn" id="tema-claro">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="svg-white3">
+                            <path d="M12 11.807A9.002 9.002 0 0 1 10.049 2a9.942 9.942 0 0 0-5.12 2.735c-3.905 3.905-3.905 10.237 0 14.142 3.906 3.906 10.237 3.905 14.143 0a9.946 9.946 0 0 0 2.735-5.119A9.003 9.003 0 0 1 12 11.807z"></path>
+                        </svg>
+                    </button>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </Header>
+
+    <main class="container-principal" id="container">
+
+            <form action="#" class="content-form">
+
+                <div class="input-order">
+                    <label for="rango" name="rango" >N° Caracteres:<span id="miValor">...</span></label>
+                    <input type="range" min="1" max="15" value="1" for="rango" name="rango" id="miControlDeslizante">
+                </div>
+
+                <div class="input-order">
+                    <input type="checkbox" for="mayus" name="mayus" id="opcion1">
+                    <label for="mayus">Minus y Mayus</label>
+                </div>
+                
+                <div class="input-order">
+                    <input type="checkbox" form="numbers" name="numbers" id="opcion2">
+                    <label for="numbers">letras y numeros</label>
+                </div>
+
+                <div class="input-order">
+                    <input type="checkbox" for="especial" name="especial" id="opcion3">
+                    <label for="especial">
+                        contraseña completa
+                    </label>
+                </div>
+
+                <div class="resultado">
+
+                    <p class="paragraph" id="contenido">Password...</p>
+                    <button class="boton" type="button" id="btn-generate">Generate</button>
+
+                </div>
+
+            </form>
+                    
+    </main>
+
+    <footer></footer>
+
+    <script src="./js/app.js"></script>
+
+</body>
+</html>
